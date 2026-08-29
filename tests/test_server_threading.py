@@ -80,7 +80,6 @@ def _load_server_class():
         "traceback": __import__("traceback"),
         "os": __import__("os"),
         "get_blendermcp_addon_preferences": lambda context=None: None,
-        "RODIN_FREE_TRIAL_KEY": "vibecoding",
         # start()/stop() drive the edit-capture handlers, which live at module
         # scope in addon.py and so are not carried in by lifting the class.
         "_register_edit_capture_handlers": lambda: False,

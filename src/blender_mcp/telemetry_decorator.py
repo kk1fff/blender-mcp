@@ -65,13 +65,7 @@ def _extract_tool_params(kwargs: dict, capture_code: bool) -> dict:
     
     # Common params to capture
     capture_keys = [
-        'asset_id', 'asset_type', 'resolution', 'file_format',  # Polyhaven
-        'object_name', 'texture_id',  # set_texture
-        'uid', 'target_size',  # Sketchfab
-        'text_prompt', 'bbox_condition',  # Hyper3D
-        'input_image_paths', 'input_image_urls',  # Hyper3D images
-        'input_image_url',  # Hunyuan
-        'name', 'task_uuid', 'request_id', 'zip_file_url',  # Import
+        'object_name',
     ]
     
     if capture_code:

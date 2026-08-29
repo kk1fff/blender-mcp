@@ -197,14 +197,6 @@ _SNAPSHOT_VIA_EXECUTE_CODE = _SNAPSHOT_VIA_EXECUTE_CODE_TEMPLATE.replace(
 
 SEMANTIC_ACTIONS: dict[str, str] = {
     "execute_blender_code": "EXECUTE_CODE",
-    "download_polyhaven_asset": "DOWNLOAD_ASSET",
-    "set_texture": "SET_TEXTURE",
-    "download_sketchfab_model": "DOWNLOAD_MODEL",
-    "generate_hyper3d_model_via_text": "GENERATE_3D",
-    "generate_hyper3d_model_via_images": "GENERATE_3D",
-    "import_generated_asset": "IMPORT_ASSET",
-    "generate_hunyuan3d_model": "GENERATE_3D",
-    "import_generated_asset_hunyuan": "IMPORT_ASSET",
     "get_scene_info": "OBSERVE",
     "get_object_info": "OBSERVE",
     "get_viewport_screenshot": "OBSERVE",

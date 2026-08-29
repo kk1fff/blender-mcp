@@ -94,15 +94,15 @@ def test_guard_trims_observe_payload():
 def test_guard_trims_oversized_action_params():
     row = {
         "action": {
-            "semantic": "GENERATE_3D",
-            "tool_name": "generate_hyper3d_model_via_text",
-            "params": {"text_prompt": "p" * 100_000},
+            "semantic": "EXECUTE_CODE",
+            "tool_name": "execute_blender_code",
+            "params": {"code": "p" * 100_000},
             "raw_code": None,
         }
     }
     _enforce_db_size_guard(row)
     assert _utf8_size(row["action"]) <= DB_FIELD_BYTE_CAPS["action"]
-    assert row["action"]["tool_name"] == "generate_hyper3d_model_via_text"
+    assert row["action"]["tool_name"] == "execute_blender_code"
 
 
 def test_guard_stubs_unshrinkable_field():
